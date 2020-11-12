@@ -8,7 +8,7 @@
 
   /* Neutral */
   --DarkBlue: hsl(249, 10%, 26%);
-  --GrayIshBlue: hsl(246, 25%, 77%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
 }
 
 *,
@@ -22,6 +22,116 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../images/bg-intro-mobile.png');
+  background-color: var(--Red);
+}
+
+.wrapper {
+  padding-left: 23px;
+  padding-right: 23px;
+  margin-bottom: 100px;
+}
+
+.grid-layout {
+  display: grid;
+}
+
+
+
+.content-top {
+  margin-top: 70px;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+}
+
+.content-top h1 {
+  font-size: 3rem;
+}
+
+.content-top p {
+  font-weight: 500;
+}
+
+
+
+
+
+
+.content-bottom {
+  margin-top: 40px;
+}
+
+
+.alert {
+  padding: 4px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--Blue);
+  border-radius: 10px;
+  box-shadow: 0px 9px 2px -1px #DA6667;
+  margin-bottom: 30px;
+}
+
+
+.form {
+  background-color: #fff;
+  padding: 24px 4px;
+  box-shadow: 0px 9px 2px -1px #DA6667;
+  border-radius: 10px;
+  text-align: center;
+  height: 430px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  height: 60px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border: none;
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+  letter-spacing: .2px;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
+
+
+input[type="submit"] {
+  min-width: 90%;
+  max-width: 90%;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--Green);
+  box-shadow: 0px 4px 2px -1px #30BA7F;
+  color: #DAFEF4;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.45rem;
+  letter-spacing: .9px;
+}
+
+.form__text {
+  padding: 10px 30px;
+  font-size: .95rem;
+  color: var(--Grayish-Blue);
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.form__text b {
+  color: var(--Red);
 }
